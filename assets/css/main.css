@@ -242,28 +242,8 @@ section, summary, time, mark, audio, video {
 			margin-bottom: 0;
 		}
 
-		.row.aln-left {
-			justify-content: flex-start;
-		}
-
 		.row.aln-center {
 			justify-content: center;
-		}
-
-		.row.aln-right {
-			justify-content: flex-end;
-		}
-
-		.row.aln-top {
-			align-items: flex-start;
-		}
-
-		.row.aln-middle {
-			align-items: center;
-		}
-
-		.row.aln-bottom {
-			align-items: flex-end;
 		}
 
 		.row > .imp {
