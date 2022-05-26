@@ -12,19 +12,22 @@ GUI Assignment: Creating Your First Web Page
 Donna Petitti, UMass Lowell Computer Science, dpetitti@cs.uml.edu
 Copyright (c) 2022 by Donna. All rights reserved. May be freely copied or
 excerpted for educational purposes with credit to the author.
-updated by WZ on May 25, 2022 at 9:23 PM
+updated by DP on May 25, 2022 at 9:23 PM
+-->
+
+<!-- I added a title soit will show my full name on the tab in browser
 -->
 
 <html>
 	<head>
 		<title>Donna Petitti</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" type="text/css"/>
 	</head>
 	<body class="is-preload">
 
-		<!-- Navigation -->
+		<!-- Navigation containing an unordered list that naviagtes the user to
+	specific areas within the webpage-->
 			<nav id="navigation">
 				<ul class="container">
 					<li><a href="#top">top</a></li>
@@ -33,24 +36,28 @@ updated by WZ on May 25, 2022 at 9:23 PM
 				</ul>
 			</nav>
 
-		<!-- Top -->
+		<!-- Top: Just contains some images located inside folders I created that
+	are sort of an introduction to myself-->
 			<article id="top" class="wrapper top">
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/sakura.png" alt="" /></span>
+							<span class="image fit"><img src="assets/images/sakura.png" alt="" /></span>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
 								<h1>Hi. I'm <strong>Donna Petitti</strong>.</h1>
-								<span class="image fit"><img src="images/me.gif" alt="" /></span>
+								<span class="image fit"><img src="assets/images/me.gif" alt="" /></span>
 							</header>
 						</div>
 					</div>
 				</div>
 			</article>
 
-		<!-- About Me -->
+		<!-- About Me contains informations about my background as well as links
+	to items that gives the user more info to me
+I was also able to implement buttons that allow the users to access the various
+information/outside links-->
 			<article id="aboutme" class="wrapper aboutme">
 				<div class="container">
 					<header>
@@ -62,34 +69,34 @@ updated by WZ on May 25, 2022 at 9:23 PM
 							<section class="box style1">
 								<span class="icon far featured fa-file"></span>
 								<h3>Resume</h3>
-								<p><a href="docs/assets/resume.pdf"></a>
+								<p><a href="assets/docs/resume.pdf">
 									<button>♡</button>
-								</p>
+								</p></a>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon brands featured fa-linkedin"></span>
 								<h3>LinkedIn</h3>
-								<p><a href="https://www.linkedin.com/in/donnapetitti/"></a>
+								<p><a href="https://www.linkedin.com/in/donnapetitti/">
 									<button>♡</button>
-								</p>
+								</p></a>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon brands featured fa-github"></span>
 								<h3>Github</h3>
-								<p><a href="https://github.com/dpetitti1"></a>
+								<p><a href="https://github.com/dpetitti1">
 									<button>♡</button>
-								</p>
+								</p></a>
 							</section>
 						</div>
 					</div>
 				</div>
 			</article>
 
-		<!-- My cat -->
+		<!-- My cat contains six images of my cat styled a specific way-->
 			<article id="cat" class="wrapper style3">
 				<div class="container">
 					<header>
@@ -99,32 +106,32 @@ updated by WZ on May 25, 2022 at 9:23 PM
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a class="image featured"><img src="images/cat.jpg" alt=""/></a>
+								<a class="image featured"><img src="assets/images/cat.jpg" alt=""/></a>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a class="image featured"><img src="images/cat2.jpg" alt=""/></a>
+								<a class="image featured"><img src="assets/images/cat2.jpg" alt=""/></a>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a class="image featured"><img src="images/cat3.jpg" alt=""/></a>
+								<a class="image featured"><img src="assets/images/cat3.jpg" alt=""/></a>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a class="image featured"><img src="images/cat4.jpg" alt=""/></a>
+								<a class="image featured"><img src="assets/images/cat4.jpg" alt=""/></a>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a class="image featured"><img src="images/cat5.jpg" alt=""/></a>
+								<a class="image featured"><img src="assets/images/cat5.jpg" alt=""/></a>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a class="image featured"><img src="images/cat6.jpg" alt=""/></a>
+								<a class="image featured"><img src="assets/images/cat6.jpg" alt=""/></a>
 							</article>
 						</div>
 					</div>

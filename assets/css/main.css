@@ -2,22 +2,22 @@
 @import url("fontawesome-all.min.css");
 
 /*
+USED A TEMPLATE NOTED HERE:
 	Miniport by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+/*
+File: main.cc
+GUI Assignment: Creating Your First Web Page
+Donna Petitti, UMass Lowell Computer Science, dpetitti@cs.uml.edu
+Copyright (c) 2022 by Donna. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by DP on May 25, 2022 at 9:23 PM
+*/
+
+h1{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -103,7 +103,8 @@ section, summary, time, mark, audio, video {
 				}
 			}
 
-/* Row */
+/* Row: formating for styling the webpage
+Majority of this is being imported from the template!!! */
 
 	.row {
 		display: flex;
@@ -1122,7 +1123,7 @@ section, summary, time, mark, audio, video {
 
 		}
 
-/* Image */
+/* Image: formatting for images */
 
 	.image {
 		display: inline-block;
@@ -1140,7 +1141,7 @@ section, summary, time, mark, audio, video {
 			margin: 0 0 2em 0;
 		}
 
-/* Button */
+/* Button formatting/styling */
 
 	input[type="button"],
 	input[type="submit"],
@@ -1165,7 +1166,7 @@ section, summary, time, mark, audio, video {
 		max-width: 24em;
 	}
 
-/* List */
+/* List formatting/styling*/
 
 	ul {
 		list-style: disc;
@@ -1214,7 +1215,7 @@ section, summary, time, mark, audio, video {
 			width: auto;
 		}
 
-/* Icons */
+/* Icons formatting/styling*/
 
 	.icon {
 		text-decoration: none;
@@ -1255,6 +1256,7 @@ section, summary, time, mark, audio, video {
 /* Wrappers */
 
 	.wrapper {
+		background-image: url("images/bg.png");
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		padding: 8em 0 8em 0;
 		text-align: center;
