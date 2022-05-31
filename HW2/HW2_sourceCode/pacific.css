@@ -1,0 +1,112 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/*Creates the background styling using provided image and color code*/
+body {
+	background-color: #00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0 0;
+	background-image: url(ptrbackground.jpg)
+}
+
+nav{
+	width:240px;
+	float: left;
+}
+
+nav ul {
+	font-size: 19px;
+	list-style: none;
+}
+
+/* creates bolder, dark blue
+with no underline text for navigation bar*/
+nav ul li a{
+	text-decoration:none;
+	font-weight:bolder;
+	color:#000231;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+/* creates a hover color for links */
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/* Added the text color of the header to white*/
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+	color: white;
+	background-image: url(sunset.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #000033;
+}
+
+/*Makes the second heading a blue color and creates a
+margin for top*/
+h2 {
+	margin-top: 8px;
+	color: #3399CC;
+}
+
+/*Makes it so h1 and h2 have a specified font and are bolder*/
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+	font-weight: 900;
+}
+
+/*makes text for contact a little smaller*/
+#contact {
+	font-size: 90%;
+}
+
+/*Dark blue color*/
+dt {
+	color: #000033;
+}
+
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-size: small;
+	background-color: white;
+	margin-left: 240px;
+	padding: 32px;
+}
+
+img{
+	float: left;
+	margin-right: 24px;
+}
+
+#wrapper{
+	min-width:600px;
+	width:80%;
+	margin: 0 auto;
+	background-color:#8DC6E4;
+}
+
+#content{
+	background-color: white;
+	margin-left: 240px;
+	padding: 16px 32px;
+}
+
+#content ul{
+	list-style: inside url(marker.gif);
+}
+
+/*Changes the color of the resort name and makes it bold*/
+.resort{
+	color: #3399CC;
+	font-weight:bold;
+}
