@@ -1,8 +1,17 @@
+/*
+File: pacific.css
+GUI Assignment: Style a Site with External CSS
+Donna Petitti, UMass Lowell Computer Science, dpetitti@cs.uml.edu
+Copyright (c) 2022 by Donna. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by DP on May 31, 2022 at 9:23 PM
+*/
+
 header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 	display: block;
 }
 
-/*Creates the background styling using provided image and color code*/
+/* creates the background styling using provided image and color code */
 body {
 	background-color: #00569f;
 	color: #666666;
@@ -11,24 +20,27 @@ body {
 	background-image: url(ptrbackground.jpg)
 }
 
+/* makes it so nav is to the left with a specified width */
 nav{
 	width:240px;
 	float: left;
 }
 
+/* nav text size and without bullet points */
 nav ul {
-	font-size: 19px;
+	font-size: 1.2em;
 	list-style: none;
 }
 
 /* creates bolder, dark blue
-with no underline text for navigation bar*/
+with no underline text for navigation bar */
 nav ul li a{
 	text-decoration:none;
 	font-weight:bolder;
 	color:#000231;
 }
 
+/* indicates a "visited" link */
 nav a:visited {
 	color: #344873;
 }
@@ -38,7 +50,7 @@ nav a:hover {
 	color: #FFFFFF;
 }
 
-/* Added the text color of the header to white*/
+/* added the text color of the header to white */
 h1 {
 	margin-bottom: 0;
 	padding: 10px;
@@ -49,31 +61,33 @@ h1 {
 	background-color: #000033;
 }
 
-/*Makes the second heading a blue color and creates a
-margin for top*/
+/* makes the second heading a blue color and creates a
+margin for top */
 h2 {
 	margin-top: 8px;
 	color: #3399CC;
 }
 
-/*Makes it so h1 and h2 have a specified font and are bolder*/
+/* makes it so h1 and h2 have a specified font and are bolder */
 h1,
 h2 {
 	font-family: Georgia, "Times New Roman", serif;
 	font-weight: 900;
 }
 
-/*makes text for contact a little smaller*/
+/* makes text for contact a little smaller */
 #contact {
 	font-size: 90%;
 }
 
-/*Dark blue color*/
+/* dark blue color */
 dt {
 	color: #000033;
 }
 
-
+/* creates footer format to allign with navigation
+added background image to match
+makes text smaller and italic */
 footer {
 	font-family: Georgia, "Times New Roman", serif;
 	font-style: italic;
@@ -83,11 +97,14 @@ footer {
 	padding: 32px;
 }
 
+/* makes it so the image floats on left with specified right margin */
 img{
 	float: left;
 	margin-right: 24px;
 }
 
+/* using given parameters from HW PDF, creates the width with a min requirement
+added background color */
 #wrapper{
 	min-width:600px;
 	width:80%;
@@ -95,18 +112,21 @@ img{
 	background-color:#8DC6E4;
 }
 
+/* added background color to white as well as gave margins to look similar */
 #content{
 	background-color: white;
 	margin-left: 240px;
 	padding: 16px 32px;
 }
 
+/* makes it so the bullets in the content use the given marker image
+as well as made it inside to match text format */
 #content ul{
 	list-style: inside url(marker.gif);
 }
 
-/*Changes the color of the resort name and makes it bold*/
+/* changes the color of the resort name to match PDF and makes it bold */
 .resort{
-	color: #3399CC;
+	color: #5d80a0;
 	font-weight:bold;
 }
