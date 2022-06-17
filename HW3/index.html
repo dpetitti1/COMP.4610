@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<!--
+File: index.html
+GUI Assignment: Creating an Interactive Dynamic Table
+Donna Petitti, UMass Lowell Computer Science, dpetitti@cs.uml.edu
+Copyright (c) 2022 by Donna. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by DP on June 16, 2022 at 9:23 PM
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HW3</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1 class="header-display">Multiplication Table</h1>
+    <p id="direction-text"><h2>Directions:</h2> Please input a number for both minimum and maximum below between the range of -50 to 50.
+      After the submit button is pressed, a table will be generated that will use the numbers entered into the form to create a multiplication table
+      completely dynamically.
+    </p>
+    <form id="form">
+        <fieldset>
+            <legend>Horizontal (Multiplier)</legend>
+            <label for="multiplierMin">Minimum</label>
+            <input type="number" id="minHorizontal" name="minHorizontal" required>
+
+            <label for="multiplierMax">Maximum</label>
+            <input type="number" id="maxHorizontal" name="maxHorizontal" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Vertical (Multiplicand)</legend>
+            <label for="multiplicandMin">Minimum</label>
+            <input type="number" id="minVertical" name="minVertical" required>
+
+            <label for="multiplicandMax">Maximum</label>
+            <input type="number" id="maxVertical" name="maxVertical" required>
+        </fieldset>
+
+        <input type="button" value="Submit" onclick="generate_multitable()">
+    </form>
+    <p id=ErrorMessage></p>
+    <p id =ErrorOutput></p>
+    <script src="js/tableGen.js"></script>
+  </body>
+</html>

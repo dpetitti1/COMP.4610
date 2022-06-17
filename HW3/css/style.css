@@ -1,0 +1,101 @@
+/* Styling for headers */
+h1 {
+	color: #EA8A95;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 1px 1px #3e3e3e;
+}
+
+h2 {
+	color: #3e3e3e;
+	font-weight: bold;
+	margin-bottom: -1px;
+	font-variant-caps: petite-caps;
+	font-size: 30px
+}
+
+/* Paragraph styling for the directions */
+p {
+	margin-bottom: 30px;
+}
+
+/* Error message/output styling */
+#ErrorMessage {
+  text-align: center;
+	background-color: #EA8A95;
+	border: 0;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+	font-weight: bold;
+  font-size: 20px;
+  margin-bottom: -2px;
+  letter-spacing: 2px
+}
+
+#ErrorOutput{
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Styles the forms */
+#form fieldset {
+    border: 1px dashed #3e3e3e;
+    margin-bottom: 50px;
+    padding: 20px 20px;
+}
+
+#form legend {
+    font-weight: bold;
+		color: #EA8A95;
+}
+
+#form input[type='number'] {
+    margin-right: 20px;
+}
+
+/*button stying*/
+#form input[type='button'] {
+    background-color: #3e3e3e;
+    border: 0;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+		position: relative;
+		left:40%;
+		border-radius: 12px;
+}
+
+/* Styles the button when clicked on */
+#form input[type='button']:active {
+    background-color: #000000;
+}
+
+
+/* Table styling */
+.tContainer {
+    border-collapse: collapse;
+    max-height: 500px;
+    outline: 1px solid #000000;
+    overflow: auto;
+		margin-bottom: 50px;
+    padding: 20px 20px;
+		font-size: 23px;
+		padding-left: 28%;
+}
+
+/* Makes it so that the whole first row is a darker shade to indicate the values the user wants */
+#mtRow:first-child{
+  background-color: #EA8A95;
+  color: white;
+}
+
+/* Makes it so that the whole first column is a darker shade to indicate the values the user wants */
+#mtCellC{
+  background-color: #EA8A95;
+  color: white;
+}
+
+/* Makes every other cell a light pink */
+#mtCellG:nth-child(odd){
+  background-color: #FFE6EE;
+}

@@ -50,7 +50,8 @@ nav a:hover {
 	color: #FFFFFF;
 }
 
-/* added the text color of the header to white */
+/* added the text color of the header to white
+implements given sunset image into the header bar to the right with a background color*/
 h1 {
 	margin-bottom: 0;
 	padding: 10px;
