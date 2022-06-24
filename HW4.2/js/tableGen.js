@@ -131,7 +131,7 @@ $(document).ready(function(){
   var oldvalue1=$("#sliderMinH").slider("option", "value");
   var newvalue1=$(this).val();
 
-  if (isNaN(newvalue1) || newvalue1 < -100 || newvalue1 > 100) {
+  if (isNaN(newvalue1) || newvalue1 < -50 || newvalue1 > 50) {
         $("#sliderMinH").val(oldvalue1);
       } else {
         $("#sliderMinH").slider("option", "value", newvalue1);
@@ -151,7 +151,7 @@ $(document).ready(function(){
   var oldvalue2=$("#sliderMaxR").slider("option", "value");
   var newvalue2=$(this).val();
 
-  if (isNaN(newvalue2) || newvalue2 < -100 || newvalue2 > 100) {
+  if (isNaN(newvalue2) || newvalue2 < -50 || newvalue2 > 50) {
         $("#sliderMaxR").val(oldvalue2);
       } else {
         $("#sliderMaxR").slider("option", "value", newvalue2);
@@ -164,7 +164,6 @@ $(document).ready(function(){
       if($("#maxVertical").val()!='' && $("#minColumn").val() !='' && $("#minHorizontal").val() !='' && $("maxH").val() !=''){
       $("#formID").submit();
     }
-
   });
 
   //sliderMinC
@@ -172,7 +171,7 @@ $(document).ready(function(){
   var oldvalue3=$("#sliderMinC").slider("option", "value");
   var newvalue3=$(this).val();
 
-  if (isNaN(newvalue3) || newvalue3 < -100 || newvalue3 > 100) {
+  if (isNaN(newvalue3) || newvalue3 < -50 || newvalue3 > 50) {
         $("#sliderMinC").val(oldvalue3);
       } else {
         $("#sliderMinC").slider("option", "value", newvalue3);
@@ -192,7 +191,7 @@ $(document).ready(function(){
   var oldvalue4=$("#sliderMaxC").slider("option", "value");
   var newvalue4=$(this).val();
 
-  if (isNaN(newvalue4) || newvalue4 < -100 || newvalue4 > 100) {
+  if (isNaN(newvalue4) || newvalue4 < -50 || newvalue4 > 50) {
         $("#sliderMaxC").val(oldvalue4);
       } else {
         $("#sliderMaxC").slider("option", "value", newvalue4);
@@ -205,7 +204,6 @@ $(document).ready(function(){
       $("#formID").submit();
     }
   });
-
 });
 
 
