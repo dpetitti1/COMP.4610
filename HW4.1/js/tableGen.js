@@ -1,5 +1,5 @@
 /*
-File: tableGen.js
+File: index.html
 GUI Assignment: Using the jQuery Plugin/UI with Your Dynamic Table
 Donna Petitti, UMass Lowell Computer Science, dpetitti@cs.uml.edu
 Copyright (c) 2022 by Donna. All rights reserved. May be freely copied or

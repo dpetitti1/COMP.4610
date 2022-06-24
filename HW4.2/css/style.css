@@ -143,3 +143,24 @@ label.error{
   cursor: pointer; /* Cursor on hover */
 	border-radius: 50%;
 }
+
+/* Slider css */
+#sliderMinH{
+	margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sliderMaxH{
+	margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sliderMinV{
+	margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sliderMaxV{
+	margin-top: 10px;
+  margin-bottom: 10px;
+}

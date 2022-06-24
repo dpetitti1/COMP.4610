@@ -1,5 +1,5 @@
 Github URL where application resides:
-https://dpetitti1.github.io/COMP.4610/HW3/
+https://dpetitti1.github.io/COMP.4610/HW4.2/
 
 Github Repository:
-dpetitti1.github.io/comp.4610/
+https://github.com/dpetitti1/COMP.4610/tree/main/HW4.2

@@ -94,6 +94,118 @@ $(document).ready(function(){
     }
   });
 
+  $('#sliderMinH').slider({
+    min:-50,
+    max:50,
+    slide: function(event,ui) {
+      $('#minHorizontal').val(ui.value).change();
+    }
+  });
+
+  $('#sliderMaxH').slider({
+    min:-50,
+    max:50,
+    slide: function(event,ui) {
+      $('#maxHorizontal').val(ui.value).change();
+    }
+  });
+
+  $('#sliderMinV').slider({
+    min:-50,
+    max:50,
+    slide: function(event,ui) {
+      $('#minVertical').val(ui.value).change();
+    }
+  });
+
+  $('#sliderMaxV').slider({
+    min:-50,
+    max:50,
+    slide: function(event,ui) {
+      $('#maxVertical').val(ui.value).change();
+    }
+  });
+
+  //sliderMinH
+  $("#minHorizontal").change(function(){
+  var oldvalue1=$("#sliderMinH").slider("option", "value");
+  var newvalue1=$(this).val();
+
+  if (isNaN(newvalue1) || newvalue1 < -100 || newvalue1 > 100) {
+        $("#sliderMinH").val(oldvalue1);
+      } else {
+        $("#sliderMinH").slider("option", "value", newvalue1);
+      }
+      // Corrects vallidation so that only submits and checks when there is an input value in bot min/max
+      if ($('#maxHorizontal').val()!=''){
+        $("#formID").validate().element("#minHorizontal");
+        $("#formID").validate().element("#maxHorizontal");
+      }
+      if($("#maxVertical").val()!='' && $("#minColumn").val() !='' && $("#minHorizontal").val() !='' && $("maxH").val() !=''){
+      $("#formID").submit();
+    }
+  });
+
+  //sliderMaxR
+  $("#maxHorizontal").change(function(){
+  var oldvalue2=$("#sliderMaxR").slider("option", "value");
+  var newvalue2=$(this).val();
+
+  if (isNaN(newvalue2) || newvalue2 < -100 || newvalue2 > 100) {
+        $("#sliderMaxR").val(oldvalue2);
+      } else {
+        $("#sliderMaxR").slider("option", "value", newvalue2);
+      }
+      // Corrects vallidation, so that only submits and checks when there is an input value in bot min/max
+      if ($('#minHorizontal').val()!=''){
+        $("#formID").validate().element("#maxHorizontal");
+        $("#formID").validate().element("#minHorizontal");
+      }
+      if($("#maxVertical").val()!='' && $("#minColumn").val() !='' && $("#minHorizontal").val() !='' && $("maxH").val() !=''){
+      $("#formID").submit();
+    }
+
+  });
+
+  //sliderMinC
+  $("#minColumn").change(function(){
+  var oldvalue3=$("#sliderMinC").slider("option", "value");
+  var newvalue3=$(this).val();
+
+  if (isNaN(newvalue3) || newvalue3 < -100 || newvalue3 > 100) {
+        $("#sliderMinC").val(oldvalue3);
+      } else {
+        $("#sliderMinC").slider("option", "value", newvalue3);
+      }
+      // Corrects vallidation, so that only submits and checks when there is an input value in bot min/max
+      if ($('#maxVertical').val()!=''){
+        $("#formID").validate().element("#maxVertical");
+        $("#formID").validate().element("#minColumn");
+      }
+      if($("#maxVertical").val()!='' && $("#minColumn").val() !='' && $("#minHorizontal").val() !='' && $("maxH").val() !=''){
+      $("#formID").submit();
+    }
+  });
+
+  //sliderMaxC
+  $("#maxVertical").change(function(){
+  var oldvalue4=$("#sliderMaxC").slider("option", "value");
+  var newvalue4=$(this).val();
+
+  if (isNaN(newvalue4) || newvalue4 < -100 || newvalue4 > 100) {
+        $("#sliderMaxC").val(oldvalue4);
+      } else {
+        $("#sliderMaxC").slider("option", "value", newvalue4);
+      }
+      if ($('#minColumn').val()!=''){
+        $("#formID").validate().element("#minColumn");
+        $("#formID").validate().element("#maxVertical");
+      }
+      if($("#maxVertical").val()!='' && $("#minColumn").val() !='' && $("#minHorizontal").val() !='' && $("maxH").val() !=''){
+      $("#formID").submit();
+    }
+  });
+
 });
 
 
