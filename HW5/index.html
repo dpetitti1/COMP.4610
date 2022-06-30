@@ -1,0 +1,55 @@
+<!--
+File: index.html
+GUI Assignment: Implementing a Bit of Scrabble with Drag-and-Drop
+Donna Petitti, UMass Lowell Computer Science, dpetitti@cs.uml.edu
+Copyright (c) 2022 by Donna. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by DP on June 29, 2022 at 9:23 PM
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Tab label -->
+    <title>Scrabble</title>
+    <link rel="stylesheet" href="../../fonts/font_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="main">
+        <header>
+          <!-- Added scrabble logo image, source: https://scrabble.hasbro.com/en-us -->
+          <img src = "images/logo.png" alt="Scrabble" class="center" class="image-blurred-edge" id="logo">
+        </header>
+        <!-- divider for the scoreboard -->
+        <div id="scoreboard">
+            <div>
+                <div class="label">Word: <span id="word"></span></div>
+            </div>
+            <div>
+                <div class="label">Score: <span id="total-score">0</span>(+<span id="cur-score"></span>)</div>
+            </div>
+            <div>
+                <div class="label">Remaining tiles: <span id="bag"></span></div>
+            </div>
+        </div>
+        <div id="board"></div>
+        <div id="buttons">
+          <!-- buttons to input next word and reset board -- word input is disable if nothing is placed on the board -->
+            <button id="next-word" style="margin-right: 2em" disabled="disabled">Next Word</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div id="rack"></div>
+        <footer>
+            Copyright &copy; 2022 Donna Petitti
+            <br>
+            <a href="mailto:victor_espaillat@student.uml.edu">donna_petitti@student.uml.edu</a>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/scrabble.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
